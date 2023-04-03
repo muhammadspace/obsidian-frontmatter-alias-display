@@ -1,6 +1,8 @@
 # Frontmatter Alias Display
 A plugin for Obsidian.md to show front-matter aliases as display names in the File Explorer. Right now, it only supports the File Explorer but I'm planning to implement it in the Graph View as well.
 
+![demonstration](vscode-local:/frontmatter-alias-display.gif)
+
 ## Why?
 "Why don't you just use write the note?" 
 Many people who are using Obsidian as a [Zettelkasten](https://zettelkasten.de/) will immediately realize that it is kind of difficult to navigate the File Explorer when all you see are notes with arbitrary titles (e.g. `202303041748` aka ID) instead of a more informative title such as `the difference between .prototype and .constructor`.
