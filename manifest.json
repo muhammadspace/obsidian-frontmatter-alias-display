@@ -6,6 +6,5 @@
 	"description": "A plugin for Obsidian to show front-matter aliases as display names in the File Explorer.",
 	"author": "muhammadv-i",
 	"authorUrl": "https://github.com/muhammadv-i",
-	"fundingUrl": "https://obsidian.md/pricing",
 	"isDesktopOnly": false
 }
