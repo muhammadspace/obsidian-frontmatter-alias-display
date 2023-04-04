@@ -3,7 +3,7 @@
 	"name": "Frontmatter Alias Display",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "A plugin for Obsidian.md to show front-matter aliases as display names in the File Explorer.",
+	"description": "A plugin for Obsidian to show front-matter aliases as display names in the File Explorer.",
 	"author": "muhammadv-i",
 	"authorUrl": "https://github.com/muhammadv-i",
 	"fundingUrl": "https://obsidian.md/pricing",
