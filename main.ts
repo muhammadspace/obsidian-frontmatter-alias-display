@@ -17,10 +17,7 @@ export default class FrontmatterAliasDisplay extends Plugin {
 
                 let aliasContent = alias ? alias : aliases;
 				// console.log(aliases);
-				if (aliasContent != null) {
-          			file.titleEl.style.flexDirection = "column";
-          			file.titleEl.createEl("div", { text: aliasContent, cls: "file-alias nav-file-title-content" });
-        		}
+				file.titleEl.createEl('div', {text: aliasContent, cls: 'file-alias nav-file-title-content'});
 			}
 		}
 	}
