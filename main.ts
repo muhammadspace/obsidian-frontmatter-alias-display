@@ -3,11 +3,12 @@ import { Plugin } from 'obsidian';
 export default class FrontmatterAliasDisplay extends Plugin {
 	displayAliases() {
 		const fileExplorer = app.workspace.getLeavesOfType('file-explorer')[0];
+		console.log(fileExplorer);
 		let files = fileExplorer.view.fileItems;
 		for (const file of Object.values(files)) {
 			if (file.file) {
 
-				const aliasDiv = file.titleEl.querySelector('.file-alias')
+				const aliasDiv = file.selfEl.querySelector('.file-alias')
 				if ( aliasDiv ) {
 					aliasDiv.remove();
 				}
@@ -17,7 +18,7 @@ export default class FrontmatterAliasDisplay extends Plugin {
 
                 let aliasContent = alias ? alias : aliases;
 				// console.log(aliases);
-				file.titleEl.createEl('div', {text: aliasContent, cls: 'file-alias nav-file-title-content'});
+				file.selfEl.createEl('div', {text: aliasContent, cls: 'file-alias nav-file-title-content'});
 			}
 		}
 	}
@@ -33,7 +34,7 @@ export default class FrontmatterAliasDisplay extends Plugin {
 		let files = fileExplorer.view.fileItems;
 		for (const file of Object.values(files)) {
 			if (file.file) {
-				const aliasDiv = file.titleEl.querySelector('.file-alias')
+				const aliasDiv = file.selfEl.querySelector('.file-alias')
 				if ( aliasDiv ) {
 					aliasDiv.remove();
 				}
