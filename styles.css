@@ -1,13 +1,8 @@
 .nav-file-title {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .file-alias {
+    flex: 0 0 100%;
     font-size: 12px;
-    font-weight: bold;
- }
-
- .nav-file-tag {
-    align-self: flex-start;
- }
+}

@@ -16,7 +16,9 @@ export default class FrontmatterAliasDisplay extends Plugin {
 				let alias = app.metadataCache.getFileCache(file.file)?.frontmatter?.alias;
 
                 let aliasContent = alias ? alias : aliases;
-				file.selfEl.createEl('div', {text: aliasContent, cls: 'file-alias nav-file-title-content'});
+				if ( aliasContent ) {
+				    file.selfEl.createEl('div', {text: aliasContent, cls: 'file-alias nav-file-title-content'});
+				}
 			}
 		}
 	}
